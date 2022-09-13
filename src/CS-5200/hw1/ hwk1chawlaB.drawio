@@ -1,0 +1,385 @@
+<mxfile host="app.diagrams.net" modified="2022-09-13T03:13:00.015Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="fYkrzJuf0hLBvTK5zNlu" version="20.3.0" type="github">
+  <diagram id="SyL3UeC1GTrs9lkFHbid" name="Page-1">
+    <mxGraphModel dx="1026" dy="480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Y8G67JatWiOBld6IQIlt-1" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Book&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;ISBN number {PK}&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Title&lt;br&gt;Publisher&lt;br&gt;Language&lt;br&gt;Total Pages&lt;br&gt;Author&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="100" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-2" value="&lt;b&gt;1.&lt;/b&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-3" value="&lt;b&gt;2.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-4" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Book&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;ISBN number {PK}&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Title&lt;br&gt;Publisher&lt;br&gt;Language&lt;br&gt;Total Pages&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="270" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-5" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Author&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Id {PK}&lt;br&gt;Name&lt;br&gt;Place of Origin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="270" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-6" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Y8G67JatWiOBld6IQIlt-4" target="Y8G67JatWiOBld6IQIlt-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="320" as="sourcePoint" />
+            <mxPoint x="430" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-7" value="writes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="340" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-10" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/geomicons/32/672340-triangle-left-128.png" parent="1" vertex="1">
+          <mxGeometry x="310" y="282.5" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-11" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="330" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-13" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="330" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-14" value="&lt;b&gt;3.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-15" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Book&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;ISBN number {PK}&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Title&lt;br&gt;Language&lt;br&gt;Total Pages&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="470" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-16" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Author&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Id {PK}&lt;br&gt;Name&lt;br&gt;Place of Origin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="470" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-20" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-21" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="410" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-22" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Homework 1&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="50" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-23" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Publisher&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;City&lt;br&gt;Country&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="285" y="650" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-24" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="320" y="505" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-25" value="" style="endArrow=none;html=1;rounded=0;fontSize=24;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="Y8G67JatWiOBld6IQIlt-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="545" as="sourcePoint" />
+            <mxPoint x="430" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-26" value="" style="endArrow=none;html=1;rounded=0;fontSize=24;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Y8G67JatWiOBld6IQIlt-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="544.5" as="sourcePoint" />
+            <mxPoint x="460" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-27" value="" style="endArrow=none;html=1;rounded=0;fontSize=24;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" target="Y8G67JatWiOBld6IQIlt-24" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="650" as="sourcePoint" />
+            <mxPoint x="430" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-29" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="365" y="620" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Y8G67JatWiOBld6IQIlt-30" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;releases&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="330" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-1" value="&lt;b&gt;4.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="61" y="880" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-2" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Book&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;ISBN number {PK}&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Title&lt;br&gt;Language&lt;br&gt;Total Pages&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="111" y="890" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-3" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Author&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Id {PK}&lt;br&gt;Name&lt;br&gt;Place of Origin&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="461" y="890" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-4" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Publisher&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;City&lt;br&gt;Country&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="111" y="1080" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-5" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="411" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-6" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#FF0000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="bmCGsU_uu3d2HClYvkG5-2" target="bmCGsU_uu3d2HClYvkG5-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="371" y="1010" as="sourcePoint" />
+            <mxPoint x="421" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-7" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#FF0000;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="bmCGsU_uu3d2HClYvkG5-4" target="bmCGsU_uu3d2HClYvkG5-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="371" y="1010" as="sourcePoint" />
+            <mxPoint x="421" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-8" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="171" y="1050" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bmCGsU_uu3d2HClYvkG5-9" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="122" y="1000" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-1" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Continent&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;Population&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="118" y="1320" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-2" value="&lt;b&gt;5.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="58" y="1310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-3" value="&lt;b&gt;6.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-4" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Continent&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;Population&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="1440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-5" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Country&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;Population&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="411" y="1440" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-6" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#FF3333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-4" target="nb_sZnvrNOBNP9-MeZ5l-5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="1520" as="sourcePoint" />
+            <mxPoint x="350" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-7" value="&lt;font color=&quot;#000000&quot;&gt;0..*&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="365" y="1440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-8" value="1..7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-9" value="composed of" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="275" y="1440" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-10" value="&lt;b&gt;7.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-11" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Continent&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;Population&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="110" y="1590" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-12" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Country&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Name {PK}&lt;br&gt;Population&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="432.5" y="1590" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-13" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#FF3333;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-11" target="nb_sZnvrNOBNP9-MeZ5l-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="1670" as="sourcePoint" />
+            <mxPoint x="350" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-14" value="&lt;font color=&quot;#000000&quot;&gt;0..*&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="387" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-15" value="1..7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="220" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-16" value="composed of" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="275" y="1590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-17" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Language&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&amp;nbsp;Name {PK}&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="437" y="1730" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-18" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.454;exitY=-0.029;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-17" target="nb_sZnvrNOBNP9-MeZ5l-12" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1720" as="sourcePoint" />
+            <mxPoint x="450" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-19" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="480" y="1700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-20" value="&lt;font color=&quot;#000000&quot;&gt;0..*&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF3333;" parent="1" vertex="1">
+          <mxGeometry x="441" y="1670" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-21" value="&lt;b&gt;8.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="46" y="1960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-22" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Room&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Location&lt;br&gt;Name {PK}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="95" y="1965" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-25" value="&lt;b&gt;9.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="55" y="2200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-27" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Classification&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Room Type {PK}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="425" y="1965" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-28" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-22" target="nb_sZnvrNOBNP9-MeZ5l-27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="345" y="2075" as="sourcePoint" />
+            <mxPoint x="395" y="2025" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-29" value="classified as" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="285" y="1975" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-30" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="200" y="1975" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-31" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="375" y="1975" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-32" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Room&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Location {PK}&lt;br&gt;Name&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="105" y="2210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-33" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Classification&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Room Type {PK}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="435" y="2210" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-34" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-32" target="nb_sZnvrNOBNP9-MeZ5l-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="355" y="2320" as="sourcePoint" />
+            <mxPoint x="405" y="2270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-35" value="classified as" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="295" y="2220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-36" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="210" y="2220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-37" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="385" y="2220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-38" value="&lt;b&gt;10.&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="61" y="2410" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-39" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Room&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Location {PK}&lt;br&gt;Name&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="111" y="2420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-40" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Classification&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Room Type {PK}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="441" y="2420" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-41" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-39" target="nb_sZnvrNOBNP9-MeZ5l-40" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="361" y="2530" as="sourcePoint" />
+            <mxPoint x="411" y="2480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-42" value="classified as" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="301" y="2430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-43" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="216" y="2430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-44" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="391" y="2430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-45" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Furniture&lt;/div&gt;&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px;&quot;&gt;Id%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bdiv%20style%3D%26quot%3Btext-align%3A%20center%3B%20box-sizing%3A%20border-box%3B%20width%3A%20100%25%3B%20background%3A%20rgb(228%2C%20228%2C%20228)%3B%20padding%3A%202px%3B%26quot%3B%26gt%3BRoom%26lt%3B%2Fdiv%26gt%3B%26lt%3Btable%20style%3D%26quot%3Bwidth%3A100%25%3Bfont-size%3A1em%3B%26quot%3B%20cellpadding%3D%26quot%3B2%26quot%3B%20cellspacing%3D%26quot%3B0%26quot%3B%26gt%3B%26lt%3Btbody%26gt%3B%26lt%3Btr%26gt%3B%26lt%3Btd%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Ftd%26gt%3B%26lt%3Btd%26gt%3BLocation%20%7BPK%7D%26lt%3Bbr%26gt%3BName%26amp%3Bnbsp%3B%26lt%3B%2Ftd%26gt%3B%26lt%3B%2Ftr%26gt%3B%26lt%3Btr%26gt%3B%26lt%3Btd%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Ftd%26gt%3B%26lt%3Btd%26gt%3B%26lt%3Bbr%26gt%3B%26lt%3B%2Ftd%26gt%3B%26lt%3B%2Ftr%26gt%3B%26lt%3B%2Ftbody%26gt%3B%26lt%3B%2Ftable%26gt%3B%22%20style%3D%22verticalAlign%3Dtop%3Balign%3Dleft%3Boverflow%3Dfill%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22120%22%20y%3D%221880%22%20width%3D%22120%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3EId&lt;br&gt;&lt;/span&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;Id {PK}&lt;br&gt;Type&lt;br&gt;Color&lt;br&gt;Location&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;" parent="1" vertex="1">
+          <mxGeometry x="109" y="2590" width="119" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-50" value="is written" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="316" y="900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-53" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="148" y="2500" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-58" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;Note :&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;1. Making ISBN as primary key since it is unique for each book.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="120" y="220" width="415" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-59" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Note:&lt;br&gt;1. Making ISBN as primary key since it is unique for each book.&lt;br&gt;2. Also, the author&#39;s name and origin can&#39;t be unique, so under my assumption, I have added AuthorId as the primary key for that entity.&amp;nbsp;&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="121" y="390" width="520" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-60" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Note: &lt;br&gt;1. Make ISBN as primary key since it is unique for each book.&lt;br&gt;2. Also, the author&#39;s name and origin can&#39;t be unique, so under my assumption, I have added AuthorId as the primary key for that entity.&amp;nbsp;&lt;br&gt;3. Making the name the primary key for the publisher entity since it should be unique for each publisher.&amp;nbsp;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="120" y="770" width="597.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-63" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/geomicons/32/672340-triangle-left-128.png" parent="1" vertex="1">
+          <mxGeometry x="295" y="905" width="25" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-64" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;Note:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); background-color: initial;&quot;&gt;1. Make ISBN as primary key since it is unique for each book.&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Also, the author&#39;s name and origin can&#39;t be unique, so under my assumption, I have added&amp;nbsp; &amp;nbsp;AuthorId as the primary key for that entity.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Making the name the primary key for the publisher entity since it should be unique.&amp;nbsp;&amp;nbsp;The&amp;nbsp;&lt;/span&gt;&lt;font style=&quot;background-color: initial;&quot; color=&quot;#000000&quot;&gt;cardinality relation between author to book is defined under the assumption that an author can write one or more books in their lifetime.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="111" y="1200" width="530" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-65" value="releases" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="178" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-66" value="Note: &lt;br&gt;1. Since name of each continent is unique, making it as PK." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="118" y="1400" width="352" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-67" value="Note: &lt;br&gt;1. Since name of each continent is unique, making it as PK.&amp;nbsp;&lt;br&gt;2. Similarly, country&#39;s name is unique as well, making it as PK.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="107" y="1530" width="352" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-68" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="338.5" y="1447.5" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-69" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="342" y="1597.5" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-72" value="has official language" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="491" y="1680" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-73" value="Note: &lt;br&gt;1. Since the name of each continent is unique, making it PK.&amp;nbsp;&lt;br&gt;2. Similarly, the country&#39;s name is unique as well, making it PK.&lt;br&gt;3. For the language entity, I created the name attribute as the PK since the languages are unique to each country.&amp;nbsp;&amp;nbsp;&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="111" y="1820" width="396" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-79" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="346" y="1982.5" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-80" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="357" y="2227.5" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-81" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="238" y="910" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-82" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="365" y="2440" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-86" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;exitX=0.432;exitY=-0.03;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="nb_sZnvrNOBNP9-MeZ5l-45" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="162" y="2560" as="sourcePoint" />
+            <mxPoint x="160" y="2500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-90" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="109" y="2560" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-91" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Note:&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. In the question, it was listed location is unique within the house, so, making the location as PK for the room entity.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. For classification entity, room type is unique, thus, making it PK.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. For the furniture entity, added Id as the PK since we don&#39;t have any other attributes to make it unique.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4. Specialization/generalization of the furniture entity into subclasses representing each furniture type information.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2910" width="480" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-93" value="collection of" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="160" y="2530" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-95" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="2750" as="sourcePoint" />
+            <mxPoint x="170" y="2710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-96" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/phosphor-regular-vol-4/256/triangle-128.png;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="156.5" y="2690" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-97" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="2750" as="sourcePoint" />
+            <mxPoint x="310" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-98" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="2790" as="sourcePoint" />
+            <mxPoint x="90" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-99" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200.63" y="2790" as="sourcePoint" />
+            <mxPoint x="200.63" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-100" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;fontColor=#000000;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="2790" as="sourcePoint" />
+            <mxPoint x="310" y="2750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-101" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Bookcase&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;Shelves&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;Height&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;Depth&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;Width&lt;/div&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="42.25" y="2790" width="97.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-102" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Chair&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;RollingChair&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="162.25" y="2790" width="97.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-103" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sofa&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;div style=&quot;height:2px;&quot;&gt;&lt;div style=&quot;height: 2px;&quot;&gt;Height&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;Depth&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;Width&lt;/div&gt;&lt;div style=&quot;height: 2px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="276" y="2790" width="97.75" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-104" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Note:&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. In the question, it was listed location is unique within the house, so, making the location PK for the room entity.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. For classification entity, room type is unique, thus, making it PK.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="104" y="2340" width="445" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="nb_sZnvrNOBNP9-MeZ5l-105" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Note:&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. In the question, it was listed name is unique within the house, so, making the name PK for the room entity.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. For classification entity, room type is unique, thus, making it PK.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="100" y="2110" width="445" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
