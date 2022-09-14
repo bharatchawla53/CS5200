@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-14T19:16:50.391Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="5Lps4mM0ei2a8DVruJCj" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-14T19:18:02.712Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="yyYDjvc6fXvTzRxwrYmQ" version="20.3.0" type="github">
   <diagram id="dQgynWNu-RUL5l4tAy5P" name="Page-1">
     <mxGraphModel dx="1026" dy="480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -92,8 +92,8 @@
         <mxCell id="C80KIhJkr5n_e56yjXvA-29" value="NoOfDoses&#xa;TimeInterval" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="C80KIhJkr5n_e56yjXvA-28">
           <mxGeometry y="26" width="120" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="C80KIhJkr5n_e56yjXvA-30" value="{}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="185" y="340" width="60" height="30" as="geometry" />
+        <mxCell id="C80KIhJkr5n_e56yjXvA-30" value="{Mandatory, OR}" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="185" y="340" width="165" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
