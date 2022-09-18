@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-18T20:39:30.150Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="nGyOyyLlVCwOCkontfj6" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-18T20:40:04.920Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="UDorkNWOE34wCZ24NQrA" version="20.3.0" type="github">
   <diagram id="dQgynWNu-RUL5l4tAy5P" name="Page-1">
     <mxGraphModel dx="1466" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -353,7 +353,7 @@
           <mxGeometry x="430" y="1190" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="C80KIhJkr5n_e56yjXvA-149" value="Notes:&amp;nbsp;&lt;br&gt;1. For vaccine entity, I named vaccineId as PK since vaccines are differentiated based off vial no.&amp;nbsp;&lt;br&gt;2. For multiplicity of clinic to vaccine, I defined 0..3 because currently, we only have 3 available.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="120" y="880" width="650" height="170" as="geometry" />
+          <mxGeometry x="125" y="800" width="650" height="170" as="geometry" />
         </mxCell>
         <mxCell id="C80KIhJkr5n_e56yjXvA-150" value="Notes:&amp;nbsp;&lt;br&gt;1. Continent to country relationship was undefined in the problem, so under my assumption, I created 1..*&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="110" y="2040" width="710" height="120" as="geometry" />
