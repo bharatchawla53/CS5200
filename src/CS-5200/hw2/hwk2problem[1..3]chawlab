@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-18T17:11:35.686Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="RnKPdbNzU_Uzp5EDcLDu" version="20.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-18T20:39:30.150Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="nGyOyyLlVCwOCkontfj6" version="20.3.0" type="github">
   <diagram id="dQgynWNu-RUL5l4tAy5P" name="Page-1">
-    <mxGraphModel dx="1026" dy="480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1466" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -11,7 +11,7 @@
           <mxGeometry x="60" y="100" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="C80KIhJkr5n_e56yjXvA-4" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Staff&lt;/div&gt;Name&lt;br&gt;EmpNo {PK}&lt;br&gt;Role&lt;br&gt;Description" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="560" y="390" width="180" height="150" as="geometry" />
+          <mxGeometry x="615.75" y="390" width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="C80KIhJkr5n_e56yjXvA-7" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" target="C80KIhJkr5n_e56yjXvA-4">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -31,13 +31,13 @@
         <mxCell id="C80KIhJkr5n_e56yjXvA-12" value="0..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="300" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="C80KIhJkr5n_e56yjXvA-32" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Appointment&lt;/div&gt;AppointmentId {PK}&lt;br&gt;Length&lt;br&gt;Time&lt;br&gt;Date&lt;br&gt;vaccineAdministered&lt;br&gt;SideEffect" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="C80KIhJkr5n_e56yjXvA-32" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Appointment&lt;/div&gt;AppointmentId {PK}&lt;br&gt;Length&lt;br&gt;Time&lt;br&gt;Date&lt;br&gt;&lt;br&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="120" y="80" width="180" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="C80KIhJkr5n_e56yjXvA-33" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Citizen&lt;/div&gt;citizenId {PK}&lt;br&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="C80KIhJkr5n_e56yjXvA-33" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Citizen&lt;/div&gt;citizenId {PK}&lt;br&gt;sideEffects" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="550" y="80" width="180" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="C80KIhJkr5n_e56yjXvA-34" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Vaccine&lt;/div&gt;vaccineType {PK}&lt;br&gt;noOfDoses&lt;br&gt;timeInterval" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="C80KIhJkr5n_e56yjXvA-34" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Vaccine&lt;/div&gt;vaccineId {PK}&lt;br&gt;vaccineType&amp;nbsp;&lt;br&gt;noOfDoses&lt;br&gt;timeInterval" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="130" y="630" width="180" height="150" as="geometry" />
         </mxCell>
         <mxCell id="C80KIhJkr5n_e56yjXvA-35" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;entryX=0.467;entryY=1.014;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.472;exitY=-0.012;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="C80KIhJkr5n_e56yjXvA-34" target="C80KIhJkr5n_e56yjXvA-11">
@@ -352,11 +352,62 @@
         <mxCell id="C80KIhJkr5n_e56yjXvA-148" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="430" y="1190" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="C80KIhJkr5n_e56yjXvA-149" value="Notes:&amp;nbsp;&lt;br&gt;1. Each vaccineType will be different, that&#39;s why I named it PK for vaccine entity.&amp;nbsp;&lt;br&gt;2. For multiplicity of clinic to vaccine, I defined 0..3 because currently, we only have 3 available.&lt;br&gt;3.&amp;nbsp; To monitor side effect, time of appointment, length, etc. I defined it as attributes to keep track of it.&amp;nbsp;&lt;br&gt;4. To administer which citizen got the vaccine, I created citizen entity, where only tracking their Id to differentiate citizens.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="130" y="800" width="650" height="170" as="geometry" />
+        <mxCell id="C80KIhJkr5n_e56yjXvA-149" value="Notes:&amp;nbsp;&lt;br&gt;1. For vaccine entity, I named vaccineId as PK since vaccines are differentiated based off vial no.&amp;nbsp;&lt;br&gt;2. For multiplicity of clinic to vaccine, I defined 0..3 because currently, we only have 3 available.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="120" y="880" width="650" height="170" as="geometry" />
         </mxCell>
         <mxCell id="C80KIhJkr5n_e56yjXvA-150" value="Notes:&amp;nbsp;&lt;br&gt;1. Continent to country relationship was undefined in the problem, so under my assumption, I created 1..*&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="110" y="2040" width="710" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-151" value="" style="rhombus;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="538.25" y="652.5" width="120" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-152" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="C80KIhJkr5n_e56yjXvA-151" target="C80KIhJkr5n_e56yjXvA-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="520" as="sourcePoint" />
+            <mxPoint x="500" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-153" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.352;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="C80KIhJkr5n_e56yjXvA-151" target="C80KIhJkr5n_e56yjXvA-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="520" as="sourcePoint" />
+            <mxPoint x="500" y="470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-154" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="C80KIhJkr5n_e56yjXvA-34" target="C80KIhJkr5n_e56yjXvA-151">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="790" as="sourcePoint" />
+            <mxPoint x="500" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-155" value="administered" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="548.25" y="690" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-156" value="" style="endArrow=none;html=1;rounded=0;fontSize=18;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="C80KIhJkr5n_e56yjXvA-4" target="C80KIhJkr5n_e56yjXvA-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="440" as="sourcePoint" />
+            <mxPoint x="500" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-157" value="monitors" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="710" y="300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-158" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ionicons-sharp-vol-2/512/triangle-sharp-128.png;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="780" y="290" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-159" value="0..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="693.75" y="240" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-160" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-161" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="225" y="250" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-162" value="0..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="315" y="670" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="C80KIhJkr5n_e56yjXvA-163" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="550" y="240" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
