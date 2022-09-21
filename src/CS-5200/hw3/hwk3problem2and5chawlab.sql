@@ -1,3 +1,4 @@
+-- Question 2:
 -- 2a) 3 databases are created by the script.
 -- 2b) 1. ap database and tables that are created under it are: general_ledger_accounts, terms, vendors,
 --        invoices, invoice_line_items, vendor_contacts, invoice_archive.
@@ -16,3 +17,18 @@
 -- 2j) Write a SQL command that will retrieve the fields: title and artist from the om.items table
        select title, artist
        from om.items
+
+
+-- Question 5:
+-- 5a) 11 tables are created by the script.
+-- 5b) Tables that created under Chinook database are : Album, Artist, Customer,
+--     Employee, Genre, Invoice, InvoiceLine, MediaType, Playlist, PlaylistTrack,
+--     Track.
+-- 5c) 347 records inserted into Album table.
+-- 5d) AlbumId is the primary key for Album table.
+-- 5e) Write a SQL SELECT command to retrieve all data from all columns and rows in the Artist table.
+       select *
+       from Chinook.Artist
+-- 5f) Write a SQL SELECT command to retrieve the fields FirstName, LastName and Title from the Employee table
+       select FirstName, LastName, Title
+       from Chinook.Employee
