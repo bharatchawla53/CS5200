@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-29T21:14:30.872Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Aivl4tryD2iPf_dyNGKq" version="20.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-29T21:24:19.642Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="kHhqmMBneeHIg-v2zAqh" version="20.3.7" type="github">
   <diagram id="n6hOYPqbTRg_huXqoske" name="Page-1">
     <mxGraphModel dx="1026" dy="480" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -268,6 +268,12 @@
         </mxCell>
         <mxCell id="UZ8KRonEaBF6RXoaCSWt-8" value="examines" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="730" y="365" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ8KRonEaBF6RXoaCSWt-9" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Client&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;clientId {PK}&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="2280" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="UZ8KRonEaBF6RXoaCSWt-10" value="&lt;div style=&quot;text-align: center; box-sizing: border-box; width: 100%; background: rgb(228, 228, 228); padding: 2px;&quot;&gt;Staff&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;clientId {PK}&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="505" y="2280" width="160" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
