@@ -1,0 +1,64 @@
+CREATE DATABASE IF NOT EXISTS PerfectPets;
+
+use PerfectPets;
+
+CREATE TABLE `clinic`
+(
+	`clinicNo` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `petNo` INT NOT NULL
+);
+
+CREATE TABLE `staff`
+(
+	`staffNo` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `clinicNo` INT NOT NULL
+);
+
+CREATE TABLE `owner`
+(
+	`ownerNo` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	`petNo` INT NOT NULL
+);
+
+CREATE TABLE `pet`
+(
+	`petNo` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `examNo` INT NOT NULL,
+    `staffNo` INT NOT NULL
+);
+
+CREATE TABLE `examination`
+(
+	`examNo` INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `treatNo` INT NOT NULL
+);
+
+CREATE TABLE `treatment`
+(
+	`treatNo` INT PRIMARY KEY NOT NULL AUTO_INCREMENT
+);
+
+-- create foreign keys constraints
+
+ALTER TABLE `clinic` ADD  CONSTRAINT `FK_petNo` FOREIGN KEY (`petNo`)
+		REFERENCES `pet` (`petNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE `staff` ADD CONSTRAINT `FK_clinicNo` FOREIGN KEY (`clinicNo`)
+		REFERENCES `clinic` (`clinicNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE `owner` ADD CONSTRAINT `FK_petNo` FOREIGN KEY (`petNo`)
+		REFERENCES `pet` (`petNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE `pet` ADD CONSTRAINT `FK_examNo` FOREIGN KEY (`examNo`)
+		REFERENCES `examination` (`examNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE `pet` ADD CONSTRAINT `FK_staffNo` FOREIGN KEY (`staffNo`)
+		REFERENCES `staff` (`staffNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+ALTER TABLE `examination` ADD CONSTRAINT `FK_treatNo` FOREIGN KEY (`treatNo`)
+		REFERENCES `treatment` (`treatNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+
+
+
+
