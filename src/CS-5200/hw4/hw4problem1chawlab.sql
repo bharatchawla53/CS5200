@@ -40,25 +40,20 @@ CREATE TABLE `treatment`
 
 -- create foreign keys constraints
 
-ALTER TABLE `clinic` ADD  CONSTRAINT `FK_petNo` FOREIGN KEY (`petNo`)
+ALTER TABLE `clinic` ADD  CONSTRAINT `FK_clinicPetNo` FOREIGN KEY (`petNo`)
 		REFERENCES `pet` (`petNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
-ALTER TABLE `staff` ADD CONSTRAINT `FK_clinicNo` FOREIGN KEY (`clinicNo`)
+ALTER TABLE `staff` ADD CONSTRAINT `FK_staffClinicNo` FOREIGN KEY (`clinicNo`)
 		REFERENCES `clinic` (`clinicNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
-ALTER TABLE `owner` ADD CONSTRAINT `FK_petNo` FOREIGN KEY (`petNo`)
+ALTER TABLE `owner` ADD CONSTRAINT `FK_ownerPetNo` FOREIGN KEY (`petNo`)
 		REFERENCES `pet` (`petNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
-ALTER TABLE `pet` ADD CONSTRAINT `FK_examNo` FOREIGN KEY (`examNo`)
+ALTER TABLE `pet` ADD CONSTRAINT `FK_petExamNo` FOREIGN KEY (`examNo`)
 		REFERENCES `examination` (`examNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
-ALTER TABLE `pet` ADD CONSTRAINT `FK_staffNo` FOREIGN KEY (`staffNo`)
+ALTER TABLE `pet` ADD CONSTRAINT `FK_petStaffNo` FOREIGN KEY (`staffNo`)
 		REFERENCES `staff` (`staffNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
-ALTER TABLE `examination` ADD CONSTRAINT `FK_treatNo` FOREIGN KEY (`treatNo`)
+ALTER TABLE `examination` ADD CONSTRAINT `FK_examinationTreatNo` FOREIGN KEY (`treatNo`)
 		REFERENCES `treatment` (`treatNo`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
-
-
-
-
