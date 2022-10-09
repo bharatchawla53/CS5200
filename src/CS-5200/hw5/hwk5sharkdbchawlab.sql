@@ -1,7 +1,7 @@
 use sharkdb;
 
 -- 1. 
-SELECT name, sid, detections AS sightings
+SELECT DISTINCT name, sid, detections AS sightings
 FROM shark; 
 
 -- 2. 
@@ -11,10 +11,10 @@ GROUP BY bayside
 ORDER BY SUM(detections) DESC; 
 
 -- 3. 
-SELECT area, town, state, detections
-FROM receiver
-JOIN township on tid = location
-ORDER BY detections DESC;
+SELECT r.area, t.town, t.state, r.detections
+FROM receiver r
+JOIN township t on t.tid = r.location
+ORDER BY r.detections DESC;
 
 -- 4.
 CREATE TABLE bayside_encounters AS 
@@ -24,10 +24,10 @@ WHERE bayside IS NOT NULL;
 
 -- 5. 
 SELECT *
-FROM shark
-JOIN attack on attack.shark = sid;
+FROM shark s
+JOIN attack a on a.shark = s.sid;
 
--- 6. 
+-- 6. TODO
 
 
 -- 7. 
@@ -67,13 +67,17 @@ JOIN victim v on v.vid = a.victim
 JOIN shark s on s.sid = a.shark;
 
 -- 13. 
-SELECT min(r.deployed), t.town, t.state
-FROM township t
-JOIN receiver r on r.location = t.tid
-GROUP BY t.town, t.state;
+SELECT r.deployed, t.town, t.state
+FROM receiver r 
+JOIN township t on t.tid = r.location
+WHERE deployed in (SELECT min(deployed) FROM receiver);
 
 -- 14. 
-
+SELECT COUNT(r.rid) AS num_receivers, t.town
+FROM receiver r
+RIGHT JOIN township t on t.tid = r.location
+GROUP BY t.town
+ORDER BY num_receivers DESC;
 
 -- 15. 
 SELECT t.town, t.state
