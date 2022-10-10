@@ -30,10 +30,10 @@ FROM shark s
 JOIN attack a on a.shark = s.sid;
 
 -- 6.
-SELECT r.bayside, r.area
+SELECT r.bayside, JSON_ARRAYAGG(r.area) AS areas
 FROM receiver r
 JOIN bay b on b.name = r.bayside
-GROUP BY r.bayside, r.area;
+GROUP BY r.bayside;
 
 -- 7. 
 SELECT name 
@@ -53,11 +53,11 @@ FROM shark
 WHERE sex = 'Female' AND length < 8
 ORDER BY length;
 
--- 10. TODO
+-- 10. 
 SELECT s.sponsor_name, count(rid) AS NoOfReceivers
 FROM sponsor s 
-RIGHT JOIN receiver r on s.sponsor_name = r.sponsor
-GROUP BY s.sponsor_name;
+LEFT JOIN receiver r on s.sponsor_name = r.sponsor
+GROUP BY s.sponsor_name; 
 
 -- 11.
 SELECT r.sponsor, count(individual_sharks_detected) AS NoOfDetections
@@ -80,10 +80,10 @@ JOIN township t on t.tid = r.location
 WHERE deployed in (SELECT min(deployed) FROM receiver);
 
 -- 14. 
-SELECT COUNT(r.rid) AS num_receivers, t.town
+SELECT COUNT(r.rid) AS num_receivers, t.town, t.state
 FROM receiver r
 RIGHT JOIN township t on t.tid = r.location
-GROUP BY t.town
+GROUP BY t.town, t.state
 ORDER BY num_receivers DESC;
 
 -- 15. 
