@@ -98,7 +98,7 @@ away_goals AS (
 )
 
 SELECT hg.team, AVG(hg.goals), ag.team, AVG(ag.goals)
-FROM home_goals hg, away_goals ag
+FROM home_goals AS hg, away_goals AS ag
 JOIN EPL.stadium es ON es.team = hg.team AND es.team = ag.team
 GROUP BY hg.team, ag.team
 
