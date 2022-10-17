@@ -11,7 +11,7 @@ FROM premierChawlaB.manager
 GROUP BY team
 HAVING COUNT(name) > 1;
 
--- 6. TODO
+-- 6.
 SELECT name, COUNT(team) AS numOfTeams
 FROM premierChawlaB.manager
 GROUP BY name
@@ -83,23 +83,23 @@ GROUP BY es.team
 ORDER BY wins DESC
 LIMIT 5;
 
--- 15. TODO
+-- 15.
 WITH home_goals AS (
-	SELECT es.team, SUM(ema.fullTimeScoreTeam1) as goals
+	SELECT es.team, AVG(ema.fullTimeScoreTeam1) AS homeGoals, AVG(ema.fullTimeScoreTeam2) AS homeConceded
 	FROM premierChawlaB.match ema
 	JOIN premierChawlaB.stadium es ON es.team = ema.team1
 	GROUP by es.team
 ),
 away_goals AS (
-	SELECT es.team, SUM(ema.fullTimeScoreTeam2) as goals
+	SELECT es.team, AVG(ema.fullTimeScoreTeam2) AS awayGoals, AVG(ema.fullTimeScoreTeam1) AS awayConceded
 	FROM premierChawlaB.match ema
 	JOIN premierChawlaB.stadium es ON es.team = ema.team2
 	GROUP by es.team
 )
 
-SELECT hg.team, AVG(hg.goals), ag.team, AVG(ag.goals)
-FROM home_goals AS hg, away_goals AS ag
-JOIN premierChawlaB.stadium es ON es.team = hg.team AND es.team = ag.team
-GROUP BY hg.team, ag.team
-
+SELECT hg.team, hg.homeGoals, hg.homeConceded, ag.awayGoals, ag.awayConceded
+FROM home_goals AS hg
+JOIN premierChawlaB.stadium AS es ON es.team = hg.team
+JOIN away_goals AS ag ON ag.team = es.team
+GROUP by hg.team, hg.homeGoals, hg.homeConceded, ag.awayGoals, ag.awayConceded;
 
