@@ -20,19 +20,24 @@ HAVING COUNT(team) > 1;
 -- 7. 
 SELECT em.name, em.team, SUM(fullTimeScoreTeam1) AS noOfGoals
 FROM premierChawlaB.manager em
-INNER JOIN premierChawlaB.stadium es ON es.team = em.team
-INNER JOIN premierChawlaB.match ema ON ema.team1 = es.team
+INNER JOIN premierChawlaB.match ema ON ema.team1 = em.team
 WHERE em.status = 'Active'
 GROUP BY em.name, em.team
 ORDER BY noOfGoals DESC;
 
 -- 8.
-SELECT em.name, COUNT(ema.matchNum) AS totalMatches
+SELECT em.name, home.homeWins + away.awayWins AS totalWins
 FROM premierChawlaB.manager em
-JOIN premierChawlaB.match ema ON ema.team1 = em.team OR ema.team2 = em.team
-WHERE em.status = 'Active' AND ema.fullTimeScoreTeam1 > ema.fullTimeScoreTeam2 OR ema.fullTimeScoreTeam2 > ema.fullTimeScoreTeam1
-GROUP BY em.name
-ORDER BY totalMatches DESC;
+JOIN (SELECT ema.team1, COUNT(*) AS homeWins 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam1 > ema.fullTimeScoreTeam2
+      GROUP BY ema.team1) AS home ON em.team = home.team1
+JOIN (SELECT ema.team2, COUNT(*) AS awayWins 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam2 > ema.fullTimeScoreTeam1
+	  GROUP BY ema.team2) AS away ON em.team = away.team2 
+WHERE em.status = 'Active' 
+ORDER BY totalWins DESC;
 
 -- 9. 
 WITH goals_table AS (
@@ -46,27 +51,38 @@ FROM goals_table
 WHERE totalGoals = ( SELECT MAX(totalGoals) FROM goals_table );
 
 -- 10. 
-SELECT es.team, count(ema.matchNum) AS drawMatches
-FROM premierChawlaB.match ema
-JOIN premierChawlaB.stadium es ON es.team = ema.team1 OR es.team = ema.team2
-WHERE ema.fullTimeScoreTeam1 = 0 AND ema.fullTimeScoreTeam2 = 0
-GROUP BY es.team
+SELECT home.team1, home.homeDraws + away.awayDraws AS drawMatches
+FROM  (SELECT ema.team1, COUNT(*) AS homeDraws 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam1 = ema.fullTimeScoreTeam2
+      GROUP BY ema.team1) AS home 	
+	  JOIN (SELECT ema.team2, COUNT(*) AS awayDraws 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam2 = ema.fullTimeScoreTeam1
+	  GROUP BY ema.team2) AS away ON home.team1 = away.team2 
+GROUP BY home.team1
 ORDER BY drawMatches DESC;
 
 -- 11.
-SELECT es.team, COUNT(ema.matchNum) AS totalCleanSheets
-FROM premierChawlaB.stadium es
-JOIN premierChawlaB.match ema ON ema.team1 = es.team OR ema.team2 = es.team
-WHERE (ema.fullTimeScoreTeam1 > 0 AND ema.fullTimeScoreTeam2 = 0) OR (ema.fullTimeScoreTeam1 = 0 AND ema.fullTimeScoreTeam2 > 0)
-GROUP BY es.team
-ORDER BY totalCleanSheets DESC
+SELECT home.team1, home.homeCleans + away.awayCleans AS cleanMatches
+FROM  (SELECT ema.team1, COUNT(*) AS homeCleans 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam2 = 0
+      GROUP BY ema.team1) AS home 	
+	  JOIN (SELECT ema.team2, COUNT(*) AS awayCleans
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam1 = 0
+	  GROUP BY ema.team2) AS away ON home.team1 = away.team2 
+GROUP BY home.team1
+ORDER BY cleanMatches DESC
 LIMIT 5;
 
 -- 12. 
 SELECT ema.*
 FROM premierChawlaB.match ema
-JOIN premierChawlaB.stadium es ON es.team = ema.team1
-WHERE ema.fullTimeScoreTeam1 > 3 AND ema.date BETWEEN '2017-12-25' AND '2018-01-03';
+WHERE ema.fullTimeScoreTeam1 >= 3 
+	AND ((month(date) = 12 AND dayOfMonth(date) >= 25)
+    OR (month(date) = 01 AND dayOfMonth(date) <= 03));
 
 -- 13. 
 SELECT ema.*
@@ -75,12 +91,16 @@ WHERE (ema.halfTimeScoreTeam1 < ema.halfTimeScoreTeam2 AND ema.fullTimeScoreTeam
 	OR (ema.halfTimeScoreTeam1 > ema.halfTimeScoreTeam2 AND ema.fullTimeScoreTeam1 < ema.fullTimeScoreTeam2); 
 
 -- 14. 
-SELECT es.team, COUNT(ema.matchNum) AS wins
-FROM premierChawlaB.stadium es
-JOIN premierChawlaB.match ema ON ema.team1 = es.team OR ema.team2 = es.team
-WHERE (ema.fullTimeScoreTeam1 > ema.fullTimeScoreTeam2) OR (ema.fullTimeScoreTeam2 > ema.fullTimeScoreTeam1)
-GROUP BY es.team
-ORDER BY wins DESC
+SELECT home.team1
+FROM (SELECT ema.team1, COUNT(*) AS homeWins 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam1 > ema.fullTimeScoreTeam2
+      GROUP BY ema.team1) AS home
+	  JOIN (SELECT ema.team2, COUNT(*) AS awayWins 
+	  FROM premierChawlaB.match ema 
+	  WHERE ema.fullTimeScoreTeam2 > ema.fullTimeScoreTeam1
+	  GROUP BY ema.team2) AS away ON home.team1 = away.team2
+ORDER BY home.homeWins + away.awayWins DESC
 LIMIT 5;
 
 -- 15.

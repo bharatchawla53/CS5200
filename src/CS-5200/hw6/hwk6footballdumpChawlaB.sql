@@ -2,7 +2,7 @@ CREATE DATABASE  IF NOT EXISTS `premierChawlaB` /*!40100 DEFAULT CHARACTER SET u
 USE `premierChawlaB`;
 -- MySQL dump 10.13  Distrib 8.0.20, for macos10.15 (x86_64)
 --
--- Host: localhost    Database: EPL
+-- Host: localhost    Database: premierChawlaB
 -- ------------------------------------------------------
 -- Server version	8.0.23
 
@@ -29,7 +29,7 @@ CREATE TABLE `manager` (
   `team` varchar(64) NOT NULL,
   `nationality` varchar(45) NOT NULL,
   `status` varchar(45) NOT NULL,
-  PRIMARY KEY (`name`),
+  PRIMARY KEY (`name`,`team`,`status`),
   KEY `Team_idx` (`team`),
   CONSTRAINT `Team` FOREIGN KEY (`team`) REFERENCES `stadium` (`team`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -41,7 +41,7 @@ CREATE TABLE `manager` (
 
 LOCK TABLES `manager` WRITE;
 /*!40000 ALTER TABLE `manager` DISABLE KEYS */;
-INSERT INTO `manager` VALUES ('Alan Pardew','West Bromwich Albion FC','England','Sacked'),('Antonio Conte','Chelsea FC','Italy','Active'),('Arsene Wenger','Arsenal FC','France','Active'),('Carlos Carvalhal','Swansea City AFC','Portugal','Active'),('Chris Hughton','Brighton & Hove Albion FC','Ireland','Active'),('Claude Puel','Leicester City FC','France','Active'),('Craig Shakespeare','Leicester City FC','England','Sacked'),('Darren Moore','West Bromwich Albion FC','Jamaica','Active'),('David Moyes','West Ham United FC','Scotland','Active'),('David Wagner','Huddersfield Town AFC','USA','Active'),('Eddie Howe','AFC Bournemouth','England','Active'),('Frank de Boer','Crystal Palace FC','Netherland','Sacked'),('Javi Gracia','Watford FC','Spain','Active'),('Jose Mourinho','Manchester United FC','Portugal','Active'),('Jurgen Klopp','Liverpool FC','Germany','Active'),('Marco Silva','Watford FC','Portugal','Sacked'),('Mark Hughes','Southampton FC','Wales','Active'),('Mauricio Pellegrino','Southampton FC','Argentina','Sacked'),('Mauricio Pochettino','Tottenham Hotspur FC','Argentina','Active'),('Paul Clement','Swansea City AFC','England','Sacked'),('Paul Lambert','Stoke City FC','Scotland','Active'),('Pep Guardiola','Manchester City FC','Spain','Active'),('Rafael Benitez','Newcastle United FC','Spain','Active'),('Ronald Koeman','Everton FC','Netherland','Sacked'),('Roy Hodgson','Crystal Palace FC','England','Active'),('Sam Allardyce','Everton FC','England','Active'),('Sean Dyche','Burnley FC','England','Active'),('Slaven Bilic','West Ham United FC','Croatia','Sacked'),('Tony Pulis','West Bromwich Albion FC','Wales','Sacked');
+INSERT INTO `manager` VALUES ('Alan Pardew','West Bromwich Albion FC','England','Sacked'),('Antonio Conte','Chelsea FC','Italy','Active'),('Arsene Wenger','Arsenal FC','France','Active'),('Carlos Carvalhal','Swansea City AFC','Portugal','Active'),('Chris Hughton','Brighton & Hove Albion FC','Ireland','Active'),('Claude Puel','Leicester City FC','France','Active'),('Craig Shakespeare','Leicester City FC','England','Sacked'),('Darren Moore','West Bromwich Albion FC','Jamaica','Active'),('David Moyes','West Ham United FC','Scotland','Active'),('David Wagner','Huddersfield Town AFC','USA','Active'),('Eddie Howe','AFC Bournemouth','England','Active'),('Frank de Boer','Crystal Palace FC','Netherland','Sacked'),('Javi Gracia','Watford FC','Spain','Active'),('Jose Mourinho','Manchester United FC','Portugal','Active'),('Jurgen Klopp','Liverpool FC','Germany','Active'),('Marco Silva','Watford FC','Portugal','Sacked'),('Mark Hughes','Southampton FC','Wales','Active'),('Mark Hughes','Stoke City FC','Wales','Sacked'),('Mauricio Pellegrino','Southampton FC','Argentina','Sacked'),('Mauricio Pochettino','Tottenham Hotspur FC','Argentina','Active'),('Paul Clement','Swansea City AFC','England','Sacked'),('Paul Lambert','Stoke City FC','Scotland','Active'),('Pep Guardiola','Manchester City FC','Spain','Active'),('Rafael Benitez','Newcastle United FC','Spain','Active'),('Ronald Koeman','Everton FC','Netherland','Sacked'),('Roy Hodgson','Crystal Palace FC','England','Active'),('Sam Allardyce','Everton FC','England','Active'),('Sean Dyche','Burnley FC','England','Active'),('Slaven Bilic','West Ham United FC','Croatia','Sacked'),('Tony Pulis','West Bromwich Albion FC','Wales','Sacked');
 /*!40000 ALTER TABLE `manager` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -113,4 +113,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-16 20:29:46
+-- Dump completed on 2022-10-17 13:34:37
