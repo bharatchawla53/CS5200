@@ -1,5 +1,5 @@
-CREATE DATABASE  IF NOT EXISTS `EPL` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `EPL`;
+CREATE DATABASE  IF NOT EXISTS `premierChawlaB` /*!40100 DEFAULT CHARACTER SET utf8 */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `premierChawlaB`;
 -- MySQL dump 10.13  Distrib 8.0.20, for macos10.15 (x86_64)
 --
 -- Host: localhost    Database: EPL
