@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-23T21:33:50.622Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="yfSBCQPW3dQ1HX1DBac6" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-23T21:47:11.368Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="6V46nLtrLzdiIUv_uFBS" version="20.5.1" type="github">
   <diagram id="RueM-pnl4m3SlA2153oP" name="Page-1">
     <mxGraphModel dx="1426" dy="761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -122,7 +122,7 @@
           <mxGeometry x="405" y="250" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--44" value="assigned" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="590" y="680" width="60" height="30" as="geometry" />
+          <mxGeometry x="500" y="670" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--45" value="0..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="500" y="860" width="60" height="30" as="geometry" />
@@ -131,28 +131,28 @@
           <mxGeometry x="500" y="530" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--47" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;direction=south;" vertex="1" parent="1">
-          <mxGeometry x="610" y="710" width="20" height="20" as="geometry" />
+          <mxGeometry x="520" y="700" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--48" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Reservation Slip&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;id {PK}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;entryTime&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;exitTime&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;penalty&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;cost&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;totalCost&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;isPaid&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;reservationId {FK}&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;overflow=fill;html=1;" vertex="1" parent="1">
-          <mxGeometry x="920" y="320" width="180" height="200" as="geometry" />
+          <mxGeometry x="660" y="640" width="180" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="Xdi7cXn04WN1E-DhCjM--49" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Xdi7cXn04WN1E-DhCjM--38" target="Xdi7cXn04WN1E-DhCjM--48">
+        <mxCell id="Xdi7cXn04WN1E-DhCjM--49" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.839;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Xdi7cXn04WN1E-DhCjM--38" target="Xdi7cXn04WN1E-DhCjM--48">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="590" y="450" as="sourcePoint" />
             <mxPoint x="640" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--50" value="has been paid for" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="750" y="380" width="80" height="30" as="geometry" />
+          <mxGeometry x="600" y="570" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--51" value="1..1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="660" y="380" width="60" height="30" as="geometry" />
+          <mxGeometry x="640" y="520" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Xdi7cXn04WN1E-DhCjM--52" value="1..*" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="860" y="380" width="60" height="30" as="geometry" />
+          <mxGeometry x="690" y="610" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Xdi7cXn04WN1E-DhCjM--53" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png" vertex="1" parent="1">
-          <mxGeometry x="800" y="395" width="15" height="15" as="geometry" />
+        <mxCell id="Xdi7cXn04WN1E-DhCjM--53" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essential-app-2/16/play-music-triangle-media-128.png;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="650" y="590" width="15" height="15" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
