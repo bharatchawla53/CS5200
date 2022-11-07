@@ -21,9 +21,10 @@ join attack a on a.location = t.tid
 GROUP BY tid
 ORDER BY noOfAttacks DESC)
 
-SELECT MAX(tid)
+SELECT tid
 INTO townWithMostAttacks
-from countPerTId;
+from countPerTId
+Limit 1;
 
 RETURN townWithMostAttacks; 
 
@@ -52,6 +53,7 @@ END //
 CALL allReceivers('Hyannis', 'MA');
 CALL allReceivers('Falmouth', 'MA');
 CALL allReceivers('Chatham', 'MA');
+CALL allReceivers('Duxbury', 'MA');
 
 -- 3.
 -- Write a procedure named sharkLenGTE(length_p)  that accepts a length for a shark and  
@@ -72,6 +74,7 @@ END //
 CALL sharkLenGTE(8);
 CALL sharkLenGTE(5);
 CALL sharkLenGTE(12);
+CALL sharkLenGTE(13);
 
 -- 4. 
 -- Write a function named numSharkWithLen(length_p)  that accepts a shark length and returns the number of 
@@ -97,7 +100,7 @@ RETURN numOfSharks;
 END //
 
 Select numSharkWithLen(8);
-Select numSharkWithLen(3);
+Select numSharkWithLen(13);
 Select numSharkWithLen(16);
 
 -- 5. 
@@ -110,9 +113,9 @@ DELIMITER //
 CREATE PROCEDURE sightingsByTown()
 BEGIN 
 
-select t.town, t.state, sum(individual_sharks_detected) as numOfSightings
+select t.town, t.state, sum(detections) as numOfSightings
 from township t
-left join bayside_encounters be on be.location = t.tid
+left join receiver r on r.location = t.tid
 group by t.town, t.state;
 
 END //
@@ -154,8 +157,9 @@ ELSE
 END IF;
 
 END //
+DELIMITER;
 
-select moreDetections('Amy', 'Alex');
+select moreDetections('Alex', 'Amy');
 select moreDetections('Bonnie', 'Cindy Lou');
 select moreDetections('Gronk', 'Hammerhead');
 select moreDetections('Heady Chomper', 'Hilary');
@@ -167,21 +171,34 @@ select moreDetections('test', 'test1');
 -- tuples in the victim, shark and township table as well. Insert another attack into the attack table. 
 -- victim name = “Ace Ventura”, age = 35, town = “Wellfleet”, state = “MA”,  shark_name = NULL, fatal = 0,
 --  date = ‘2021-08-11’, description = “right foot”, activity = “surfing”
-
-
+DELIMITER ;
 DROP PROCEDURE IF EXISTS createAttack;
-DELIMITER // 
-CREATE PROCEDURE createAttack(sname_p VARCHAR(64), vname_p VARCHAR(45), vage_p INT, fatal_p CHAR(1), attack_date DATE, 
-activity_p VARCHAR(64), description_p VARCHAR(64), town_p VARCHAR(64), state_p CHAR(2))
 
-BEGIN 
+DELIMITER //
+CREATE PROCEDURE createAttack(sname_p VARCHAR(50), vname_p VARCHAR(50), vage_p INT, fatal_p CHAR(1), attack_date DATE, 
+	activity_p VARCHAR(64),  description_p VARCHAR(64), town_p VARCHAR (64), state_p VARCHAR(2))
+    
+BEGIN
+DECLARE vid_l INT;
+DECLARE lid_l INT;
+DECLARE sid_l INT;
 
--- TODO
+INSERT IGNORE INTO victim (name, age) VALUES (vname_p, vage_p);
+SELECT victim.vid INTO vid_l FROM victim WHERE victim.name=vname_p AND victim.age=vage_p LIMIT 1;
+
+INSERT IGNORE INTO township (town, state) VALUES (town_p, state_p);
+SELECT township.tid INTO lid_l FROM township WHERE township.town=town_p AND township.state=state_p LIMIT 1;
+
+INSERT IGNORE INTO shark (name, sex) VALUES (sname_p, 'Unknown');
+SELECT shark.sid INTO sid_l FROM shark WHERE name=sname_p LIMIT 1;
+
+INSERT IGNORE INTO attack( shark, victim, fatal, date, activity, description, location) VALUES ( sid_l, vid_l, fatal_p, attack_date, activity_p, description_p, lid_l) ;
 
 END //
+DELIMITER ;
 
-
-CALL createAttack;
+CALL createAttack(NULL,'Ace Venturaa', 35, '0', '2021-08-12', 'surfing', 'right foot', 'Wellfleetee', 'MA' );
+CALL createAttack(NULL,'Ace Ace', 35, '0', '2021-08-22', 'surfing', 'right foot', 'INS', 'MA' );
 
 -- 8. 
 -- Modify the township table to track the number of shark attacks for that town. Call the new field numAttacks.
@@ -249,19 +266,34 @@ CALL call_each_row();
 DELIMITER // 
 
 CREATE TRIGGER attack_after_insert 
-AFTER INSERT ON attack
+BEFORE INSERT ON attack
 FOR EACH ROW 
 BEGIN 
-	CALL initialize_num_attack(NEW.location); 
+	IF NEW.victim NOT IN (
+		select victim, date
+        from attack 
+        where victim = NEW.victim and date = NEW.date
+    ) THEN 
+		CALL initialize_num_attack(NEW.location); 
+        
+	END IF; 
 
 END //
 
 INSERT INTO victim
-VALUES (9, 'Jennifer Jones', 32);
+VALUES (11, 'Jennifer Jones', 32);
 
 INSERT INTO attack 
-VALUES (NULL, 9, 0, '2022-11-11', 'surfing', 'left foot', 10);
+VALUES (NULL, 11, 0, '2022-12-11', 'surfing', 'left foot', 10);
 
+INSERT INTO victim
+VALUES (10, 'Eric Jones', 30);
+
+INSERT INTO attack 
+VALUES (NULL, 10, 0, '2022-12-11', 'surfing', 'left foot', 4);
+
+INSERT INTO attack 
+VALUES (NULL, 10, 0, '2022-12-11', 'surfing', 'left foot', 4);
 
 -- 10.
 -- Write a trigger that updates township.numAttacks whenever an attack is deleted from the attack table. 
@@ -272,14 +304,24 @@ VALUES (NULL, 9, 0, '2022-11-11', 'surfing', 'left foot', 10);
 DELIMITER // 
 
 CREATE TRIGGER attack_after_delete 
-AFTER DELETE ON attack
+BEFORE DELETE ON attack
 FOR EACH ROW 
 BEGIN 
+	IF OLD.victim IN (
+		select victim, date
+        from attack 
+        where victim = OLD.victim and date = OLD.date
+    ) THEN 
 	CALL initialize_num_attack(OLD.location); 
+    
+    END IF;
 
 END //
 
 DELETE FROM attack WHERE victim = 9;
+DELETE FROM attack WHERE victim = 4;
+DELETE FROM attack WHERE victim = 10;
+DELETE FROM attack WHERE victim = 53;
 
 -- 11. 
 -- Create and execute a prepared statement from the SQL workbench that calls the function 
