@@ -1,0 +1,20 @@
+1. {type : "movie", title : "Titanic"}
+2. 2 records are returned for question 1.
+3. {type : "movie", directors : "Jean Negulesco"}
+4. 8 records are returned for question 3.
+5. {type : "movie", directors : "Jean Negulesco", rated: "APPROVED"}
+6. 2 records are returned for question 5.
+7. {type : "movie"}
+8. 23276 records are returned for question 7.
+9. {type : "movie", $or: [{rated : "APPROVED"}, {rated : "NOT RATED"}]}
+10. 2051 records are returned for question 9.
+11. {type : "movie", $or: [{rated : "APPROVED"}, {rated : "NOT RATED"}], directors: "Jean Negulesco"}
+12. 3 records are returned for question 11.
+13. {type : "movie", languages : {$size : 2}}
+14. 3640 records are returned for question 13.
+15. {type : "movie", "languages.1" : {$exists : true} }
+16. 6021 records are returned for question 15.
+17. {type : "movie", "imdb.rating" : {$gt : 9.1} }
+18. 5 records are returned for question 17.
+19. {type : "movie","tomatoes.viewer.rating" : {$gt : 4}}
+20. 1952 records are returned for question 19.
