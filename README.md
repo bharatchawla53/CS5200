@@ -1,1 +1,1 @@
-# CS-Northeastern2
+# CS5200 - Database Management Systems
